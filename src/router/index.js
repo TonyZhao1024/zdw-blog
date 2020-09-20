@@ -1,6 +1,6 @@
 import Vue from "vue";
 import VueRouter from 'vue-router';
-import StringUtilsComp from '../components/detaiVue/StringUtilsComp.vue'
+import StringUtilsComp from '../components/detaiVue/StringUtilsComp'
 import HelloWorld from "../components/HelloWorld";
 
 Vue.use(VueRouter)
