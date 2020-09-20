@@ -22,18 +22,15 @@ const router = new VueRouter({
     routers:[
         {
             path: '/',
-            name: 'index',
-            component: HelloWorld,
-            children:[
-                {
-                    path:'/StringUtilsComp',
-                    name:'StringUtilsComp',
-                    component: StringUtilsComp
-                }
-            ]
+            name: 'HelloWorld',
+            component: HelloWorld
+        },
+        {
+            path: '/StringUtilsComp',
+            name: 'StringUtilsComp',
+            component: StringUtilsComp
         }
     ]
-
 })
 
 export default router
