@@ -20,11 +20,15 @@
                         <!--                    <el-menu-item-group title="分组2">-->
                         <!--                        <el-menu-item index="1-3">选项3</el-menu-item>-->
                         <!--                    </el-menu-item-group>-->
-                        <el-submenu index="1-4">
+                        <el-submenu index="1-1">
                             <template slot="title">字符串</template>
-                            <el-menu-item index="/StringUtilsComp" @click="goto('/StringUtilsComp')">字符串校验</el-menu-item>
+                            <el-menu-item index="1-1-1" @click="goto('/StringUtilsComp')">字符串校验</el-menu-item>
                         </el-submenu>
-
+                        <el-submenu index="1-2">
+                            <template slot="title">文件处理</template>
+                            <el-menu-item index="1-2-1" @click="goto('/StringUtilsComp')">文件移动</el-menu-item>
+                            <el-menu-item index="1-2-2" @click="goto('StringUtilsComp')">文件读写</el-menu-item>
+                        </el-submenu>
                     </el-submenu>
                     <el-menu-item index="2">
                         <i class="el-icon-menu"></i>
@@ -40,7 +44,6 @@
                     </el-menu-item>
                 </el-menu>
             </el-col>
-            <router-view></router-view>
         </el-row>
 </template>
 
@@ -55,8 +58,10 @@
                 console.log(key, keyPath);
             },
             goto(path) {
+                this.$router.push(path);
                 this.$router.replace(path);
-                console.log('routerPath', path);
+                console.log('$router', this.$router);
+                console.log('path', path);
             }
         }
     }
