@@ -35,7 +35,9 @@
         float: right;
     }
     #rout {
-        margin-top:10px
+        margin-top:50px;
+        margin-left: 1px;
+        float: left; /*侧边栏居左，改为right可令侧边栏居右*/
     }
     #left {
         font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -45,6 +47,6 @@
         color: #2c3e50;
         margin-left: 5px;
         float: left; /*侧边栏居左，改为right可令侧边栏居右*/
-        width: 350px;
+        width: 300px;
     }
 </style>

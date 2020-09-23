@@ -19,11 +19,11 @@ VueRouter.prototype.replace = function replace (to) {
 }
 
 const router = new VueRouter({
-    routers:[
+    routes:[
         {
             path: '/',
             name: 'HelloWorld',
-            component: HelloWorld
+            component: HelloWorld,
         },
         {
             path: '/StringUtilsComp',
